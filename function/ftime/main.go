@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	//time本身也是一个数据类型
+	//	time本身也是一个数据类型
 	// 1、获取当前时间的方法
 	now := time.Now()
 	fmt.Printf("now=%v,nowtype=%T \n", now, now)
@@ -32,6 +32,26 @@ func main() {
 
 	fmt.Printf(now.Format("15:04:05 \n"))
 
-	fmt.Printf(now.Format("2006"))   //因为这个时间每一个都是不一样的，所以取相关值可以直接写
+	fmt.Printf(now.Format("2006 \n"))   //因为这个时间每一个都是不一样的，所以取相关值可以直接写
+
+
+
+	// 4、时间的常量！
+	// 	纳秒、微秒、毫秒    进行转换时，只能乘 
+	// 每隔1s打印1个数字。
+/* 	i:=0
+	for{
+		i++
+		fmt.Println(i)
+		time.Sleep(time.Millisecond*100)
+		if i==50 {
+			break
+		}
+	} */
+	//	（1）unix和UnixNano的使用
+	//      这两个时间戳只能用在time这个类型的数据上！
+	fmt.Printf("unix时间戳= %v ，nuinxNano时间戳=%v",now.Unix(),now.UnixNano())
+
+
 
 }

@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	//	time本身也是一个数据类型
+	//time本身也是一个数据类型
 	// 1、获取当前时间的方法
 	now := time.Now()
 	fmt.Printf("now=%v,nowtype=%T \n", now, now)

@@ -30,8 +30,11 @@ func main() {
 	// 2、给数组进行初始化
 	//	(1)数组初始化的第一种方式，直接在申明时去做 :var variable_name [SIZE] variable_type
 	var hens = [6]float64{1.0, 3.0, 5.0, 3.4, 2.0, 50.0}
+	fmt.Printf("hens的数据类型是：%T \n", hens)
 	//	(2)数组初始化的第二种方式 如果你长度不确定，可以通过[...]来定义，数组会通过输入内容自定义数组长度。
+	// 我这是把balance 这个申明成切片了~~！！！
 	var balance = []float32{1000.0, 2.0, 3.4, 7.0, 50.0}
+	fmt.Printf("balance的数据类型是：%T \n", balance)
 	//	(3)指定元素下表的元素的值！！！！
 	//	var hens =[3]float32{1:3.2，0:4.0 ，2：5.0}/
 	rangeArray(balance)

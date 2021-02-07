@@ -14,8 +14,9 @@ var end int
 // 遍历一下输出
 
 func check()
-
 // 购票
+
+
 
 func sellTocket()
 
@@ -29,5 +30,5 @@ func refundTicket()
 
 
 
-main（）
+main()
 

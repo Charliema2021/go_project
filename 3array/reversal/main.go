@@ -9,7 +9,7 @@ import (
 )
 
 // 交换元素
-func change(arr []int) {
+/* func change(arr []int) {
 	fmt.Println(arr)
 	var temp int = 0
 	len := len(arr)
@@ -19,6 +19,14 @@ func change(arr []int) {
 		arr[len-1-i] = temp   // 把temp里的数字给第一个！
 	}
 	fmt.Printf("arr type=%T",arr)
+
+} */
+
+func convert(arr [5]int){
+	for i:=0;i<len(arr)-1;i++{
+		arr[i],arr[len(arr)-1-i]=arr[len(arr)-1-i],arr[i]
+	}
+	fmt.Println(arr)
 
 }
 
@@ -54,11 +62,13 @@ func main() {
 	}
 
 	// 2、输出原数组
-	//readArr(intArr)
+	readArr(intArr)
 	fmt.Println("数组转置后")
 	// 3、交换数组
-	slice :=intArr[:]
-	change(slice)
+	//slice :=intArr[:]
+	// change(slice)
+	convert(intArr)
 	// 3、输出数组
+
 
 }

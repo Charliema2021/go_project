@@ -1,0 +1,6 @@
+// 基本语法
+	var map[type]type
+			[key]value
+	1、key 可以是多种类型，通常是int、string
+		注意：slice、map、function不可以成为key（因为这几个没法用==来判断）
+	2、value 数据类型跟key基本一致，常用int、float、string、map、struct

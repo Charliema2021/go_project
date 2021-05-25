@@ -21,16 +21,16 @@ func createArr(arr *[10]int) {
 // 2倒置数组输出
 // 递归调用一下试试？
 
-func convert(arr [10]int){
+/* func convert(arr [10]int){
 	for i:=0;i<len(arr)-1;i++{
 		arr[i],arr[len(arr)-1-i]=arr[len(arr)-1-i],arr[i]
 	}
 	fmt.Println("arr转置后为：",arr)
 
-}
+} */
 
 
-/* func convert(arr [10]int) {
+func convert(arr [10]int) {
 	var temp int = 0 // 临时变量，用来接收交换用的值
 	var len int = len(arr)  // 10
 	for i := 0; i < len-1; i++ {
@@ -42,7 +42,7 @@ func convert(arr [10]int){
 
 	}
 	fmt.Println("arr排序后= ", arr)
-} */
+}
 
 // 3对其进行标准运算，sum、average、max、min
 func sumArr(arr [10]int) int {
@@ -76,9 +76,10 @@ func serch(arr [10]int, value, left, right, mid int) {
 }
 
 func main() {
-	var arrInt  = [10]int[62,6,13,54,23,52,51,36,37,56]
+	//var arrInt  = [10]int[62,6,13,54,23,52,51,36,37,56]
+	var arrInt [10]int
 	// 生成数组~
-	//createArr(&arrInt)
+	createArr(&arrInt)
 	fmt.Println("生成的随机数组为：", arrInt)
 	// 数组的转置
 	convert(arrInt)

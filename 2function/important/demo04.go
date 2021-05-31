@@ -7,8 +7,9 @@ import (
 func test4(n1 int, n2 int) int {
 	return n1 + n2
 }
-
-func test41(funvar func(int, int) int, num1 int, num2 int) int { // 形参funvar 申明为函数类型，你来时候的test4是一个func（num1，num2）所以我func也得带俩跟形参
+// 的
+// 形参funvar 申明为函数类型，你来时候的test4是一个func（num1，num2）所以我func也得带俩跟形参
+func test41(funvar func(int, int) int, num1 int, num2 int) int { 
 	return funvar(num1, num2)
 }
 

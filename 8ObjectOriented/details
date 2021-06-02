@@ -1,0 +1,20 @@
+1、struct这个类型再存储数据时候地址是连续可追溯的，
+    所以能够用地址去快速获取内容
+
+
+
+2、struct类型之间是相互不同的数据类型，所以需要互相转换时候，需要强制转换，
+    转换有两个要求，第一数据类型名字一样、类型个数一样。
+    type A struct{
+        num int
+    }
+    type B struct{
+        num int
+    }
+
+    var a A
+    var b B
+    a = A(b)
+
+3、struct变量惊醒json处理哦~~~：
+（标签的用处tag）-反射

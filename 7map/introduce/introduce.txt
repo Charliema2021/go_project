@@ -4,8 +4,16 @@
 	1、key 可以是多种类型，通常是int、string
 		注意：slice、map、function不可以成为key（因为这几个没法用==来判断）
 	2、value 数据类型跟key基本一致，常用int、float、string、map、struct
+<<<<<<< HEAD
 
 
 // 使用细节
 	1、map也是引用类型的数据，所以在对map进行修改时，原来的map是会发生变化的
 	
+=======
+	3、常用申明举例
+		var a map[string]string
+		var a map[string]int
+		var a map[string]map[string]string
+		!map在申明后，不会立即分配内存，而是在make后才分配
+>>>>>>> 460d110516e31ed5505672c7cabba9ebc97f6479

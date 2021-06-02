@@ -4,9 +4,6 @@ import "fmt"
 
 // 自定义函数，主要格式func cal(形式参数 参数类型，形式参数 参数类型，形式参数 参数类型)（返回值列表，返回值列表）
 func Cal(n1 float32, n2 float32, operater string) float32 {
-	var n1 float32
-	var n2 float32
-	var operater string
 	var result float32
 	switch operater {
 	case "+":

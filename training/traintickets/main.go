@@ -13,12 +13,18 @@ var end int
 // 查询
 // 遍历一下输出
 
-func check()
+func check(){
+
+
+}
+
 // 购票
 
+func sellTicket(){
 
 
-func sellTocket()
+
+}
 
 
 
@@ -30,5 +36,5 @@ func refundTicket()
 
 
 
-main()
+main（）
 

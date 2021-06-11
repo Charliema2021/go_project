@@ -28,6 +28,8 @@ func (p *Personinfor) SetAge(age int) {
 
 }
 
+// GetAge这个方法的意义： 从结构体中取值~~
+// 将age这个字段进行封装，在其他地方不能随意使用，如果非得用，那就得通过getage方法，
 func (p *Personinfor) GetAge() int {
 	return p.age
 }

@@ -10,7 +10,7 @@ func main() {
 	gusee := "h"
 	if low <= high {
 		mid := (low + high) / 2
-		if gusee == *mid {
+		if gusee == &[mid] {
 			fmt.Println("找到了h")
 
 		}

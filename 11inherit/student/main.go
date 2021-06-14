@@ -49,7 +49,8 @@ func (stu *Student) showInfor() {
 
 func main() {
 	var pupil01 = &Pupil{}
-	pupil01.Student.Name = "matianqi"
+	// 简化写法~~~
+	pupil01.Name = "matianqi"
 	pupil01.Student.Age = 20
 	pupil01.Student.score = 98.00
 	pupil01.Student.identity = "pupil"
